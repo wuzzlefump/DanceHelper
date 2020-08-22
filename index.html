@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance_Helper</title>
+<!-- bulma -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css"> 
+<!-- fontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<!-- mycss -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" id="logo">
+            <i class="fab fa-black-tie fa-2x"></i>
+            <h2>Dance</h2>
+          </a>
+      
+        </div>
+      </nav>
+    <!-- nav -->
+<div class="columns">
+    <div class="column">
+    <!-- buttons -->
+    <aside class="menu card">
+        <h2 class="menu-label">
+          What would you like to know more about?
+        </h2>
+        <br>
+        <h2 class="menu-label">
+          Dance types:
+        </h2>
+        <ul class="menu-list" id="button-container">
+
+        </ul>
+      </aside>
+    </div>
+    <!-- buttons -->
+
+    <!-- info card -->
+    <div class="column">
+    <div class="card info">
+        <div class="card-image pic" id="pic">
+            <i class="fab fa-black-tie fa-10x"></i>
+        </div>
+        <div class="card-content media">
+          <div class="media">
+            <div class="media-left">
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Dance <span id="dance-name"></span></p>
+              <p class="subtitle is-6"></p>
+            </div>
+          </div>
+      
+          <div class="content" id ="history">
+
+          </div>
+          <button class="info-Btn">More</button>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title">More information</p>
+            <button class="delete" aria-label="close"></button>
+          </header>
+          <section class="modal-card-body" id="extra-container">
+            <!-- Content ... -->
+          </section>
+          <footer class="modal-card-foot">
+            <button class="close-button">Close</button>
+          </footer>
+        </div>
+      </div>
+
+    </div>
+</div>
+    <!-- info card -->
+
+    <!-- footer -->
+<div class="footer">
+<h1>
+    Technologies Used:
+</h1>
+
+<p>Bulma</p>
+<p>FontAwesome</p>
+<p>jquery</p>
+
+</div>
+
+
+
+    <!-- scripts -->
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <!-- my js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
