@@ -76,3 +76,9 @@ body{
     flex-direction: column;
     align-items: center;
 }
+#pic{
+    padding-top: 5%;
+}
+.modal{
+    margin-top: 5%;
+}

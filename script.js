@@ -79,14 +79,20 @@ $(document).on("click", ".button", function(){
     const objectArray = [Home,American,International,Other,Rhythm,Smooth,Alternatives,Standard,Latin]
     const target = $(this).attr("data-name");
     console.log(target);
-
     objectArray.forEach(function(item){
-
         if(target==item.name){
             clearContent();
             createContent(item);
         }
-
     })
-
+})
+// modal
+$(".info-Btn").click(function(){
+$("#extraModal").attr("class", "is-active")
+});
+$(".close").click(function(){
+$("#extraModal").attr("class", "modal")
+})
+$("#logo").click(function(){
+    initial();
 })
