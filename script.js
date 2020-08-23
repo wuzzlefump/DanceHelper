@@ -24,7 +24,6 @@ function DANCE(name,description,array,picture,extra){
 //home
 const Home = new Category("Home","Click a button to find out more about Dance!",["American","International","Other"],"anyone can learn to dance",`<i class="fab fa-black-tie fa-10x"></i>`)
 // home
-
 //American
 const American = new Category("American","American style dances refer to dances that are competed in by the ballroom community that started in America. It falls into three main categories: Smooth, Rhythm, and the Alternative dances.",["Smooth","Rhythm","Alternatives","Home"],"American style dances are generally danced more socially than international",`<i class="fas fa-flag-usa fa-10x"></i>`)
 //Rhythm
@@ -43,6 +42,28 @@ const Mambo = new DANCE("Mambo","description",["Rhythm"],`<img src="https://img.
 
 // other
 const Other = new Category("Other", "other",["StreetLatin","Club","Country","Misc", "Home"], "other", `<i class="fas fa-road fa-10x"></i>`)
+
+
+const StreetLatin = new Category("StreetLatin","description",["Bachata", "Salsa", "Zouk", "Forro", "Kizomba", "Cumbia", "Other"],"",`<i class="fas fa-road fa-10x"></i>`)
+
+const Bachata = new DANCE("Bachata","description",["StreetLatin"],`<img src="https://img.icons8.com/emoji/100/000000/dancing-girl.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+"4/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time varied mpm time Prince Royce: Incondicional")
+
+const Salsa = new DANCE("Salsa","description",["StreetLatin"],`<img src="https://img.icons8.com/emoji/100/000000/dancing-girl.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+"7/10"+" its versatility is: "+"Low" +" and its song tempo plus an example is: "+" 4/4 time 40-55 mpm time Marc Anthony: Vivr Mi Vida")
+
+const Zouk = new DANCE("Zouk","description",["StreetLatin"],`<img src="https://img.icons8.com/emoji/100/000000/dancing-girl.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+"7/10"+" its versatility is: "+"very versatile" +" and its song tempo plus an example is: "+" 4/4 time varied mpm time Prince Roya: Lie")
+
+const Forro = new DANCE("Forro","description",["StreetLatin"],`<img src="https://img.icons8.com/emoji/100/000000/dancing-girl.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+"N/A"+" its versatility is: "+"N/A" +" and its song tempo plus an example is: "+" N/A")
+
+const Cumbia = new DANCE("Cumbia","description",["StreetLatin"],`<img src="https://img.icons8.com/emoji/100/000000/dancing-girl.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+"6/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" N/A" )
+
+const Kizomba = new DANCE("Kizomba","description",["StreetLatin"],`<img src="https://img.icons8.com/emoji/100/000000/dancing-girl.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+"8/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time varied tempo Nao me toca")
+
+const Club = new Category("Club","description",["Blues","NightClub2Step","Hustle","Balboa","CarolinaShag","Other"],"",`<i class="fas fa-road fa-10x"></i>`)
+
+const Country = new Category("Country","description",["2Step","3step","CountryWaltz","CountrySwing","Other"],"",`<i class="fas fa-road fa-10x"></i>`)
+
+const Misc = new Category("Misc","description",["Polka", "Peabody","Argentine", "CollegiateShag",
+"Other"],"",`<i class="fas fa-road fa-10x"></i>`)
 //other
 
 //Smooth
@@ -133,7 +154,7 @@ function clearContent(){
 }
 
 $(document).on("click", ".button", function(){
-    const objectArray = [Home,American,International,Other,Rhythm,ChaCha,Rumba,EastCoastSwing,Bolero,Mambo,Smooth,Waltz,Tango,Foxtrot,VienneseWaltz,Alternatives,WestCoastSwing,Samba,Merengue,PasoDoble,Standard,SlowWaltz,StandardTango,SlowFoxtrot,Viennese,Quickstep,Latin,LatinRumba,Paso,Jive,ChaChaCha,InternationalSamba]
+    const objectArray = [Home,American,International,Other,Rhythm,ChaCha,Rumba,EastCoastSwing,Bolero,Mambo,Smooth,Waltz,Tango,Foxtrot,VienneseWaltz,Alternatives,WestCoastSwing,Samba,Merengue,PasoDoble,Standard,SlowWaltz,StandardTango,SlowFoxtrot,Viennese,Quickstep,Latin,LatinRumba,Paso,Jive,ChaChaCha,InternationalSamba,StreetLatin,Club,Country,Misc, Bachata, Zouk, Kizomba,Forro,Cumbia, Salsa]
     const target = $(this).attr("data-name");
     console.log(target);
     objectArray.forEach(function(item){
