@@ -73,9 +73,11 @@ const Country = new Category("Country","description",["TwoStep","ThreeStep","Cou
 
 const TwoStep = new DANCE("TwoStep","description",["Country"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"4/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time and 45 mpm save a horse ride a cowboy. (paul doesnt like country enough to look up the artist) ")
 
-const ThreeStep = new DANCE("Threestep","description",["Country"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"6/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time and 27-30 mpm (paul doesnt like country enough to look up the artist or song)")
+const ThreeStep = new DANCE("ThreeStep","description",["Country"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"6/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time and 27-30 mpm (paul doesnt like country enough to look up the artist or song)")
 
 const CountrySwing = new DANCE("CountrySwing", "description",["Country"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"3/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time and a varied tempo . (paul doesnt like country enough to look up an artist or song) ")
+
+const CountryWaltz = new DANCE("CountryWaltz","description",["Country"],``,"Pauls Biased belief of this dance is that its difficulty is: "+"3/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" 3/4 time and a varied tempo . (paul doesnt like country enough to look up an artist or song)" )
 //Country
 //misc
 const Misc = new Category("Misc","description",["Polka", "Peabody","Argentine","Balboa","CarolinaShag", "CollegiateShag",
@@ -174,7 +176,7 @@ function clearContent(){
 }
 
 $(document).on("click", ".button", function(){
-    const objectArray = [Home,American,International,Other,Rhythm,ChaCha,Rumba,EastCoastSwing,Bolero,Mambo,Smooth,Waltz,Tango,Foxtrot,VienneseWaltz,Alternatives,WestCoastSwing,Samba,Merengue,PasoDoble,Standard,SlowWaltz,StandardTango,SlowFoxtrot,Viennese,Quickstep,Latin,LatinRumba,Paso,Jive,ChaChaCha,InternationalSamba,StreetLatin,Club,Country,Misc, Bachata, Zouk, Kizomba,Forro,Cumbia, Salsa, Blues, NightClub2Step, Hustle,TwoStep,ThreeStep,CountrySwing]
+    const objectArray = [Home,American,International,Other,Rhythm,ChaCha,Rumba,EastCoastSwing,Bolero,Mambo,Smooth,Waltz,Tango,Foxtrot,VienneseWaltz,Alternatives,WestCoastSwing,Samba,Merengue,PasoDoble,Standard,SlowWaltz,StandardTango,SlowFoxtrot,Viennese,Quickstep,Latin,LatinRumba,Paso,Jive,ChaChaCha,InternationalSamba,StreetLatin,Club,Country,Misc, Bachata, Zouk, Kizomba,Forro,Cumbia, Salsa, Blues, NightClub2Step, Hustle,TwoStep,ThreeStep,CountrySwing,CountryWaltz]
     const target = $(this).attr("data-name");
     console.log(target);
     objectArray.forEach(function(item){
