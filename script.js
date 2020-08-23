@@ -62,15 +62,43 @@ const VienneseWaltz = new DANCE("VienneseWaltz","description",["Smooth"],`<img s
 const Alternatives = new Category("Alternatives","Alternative Dances",["WestCoastSwing","Merengue","Samba","PasoDoble","American"],"Alternative Dances", `<i class="fas fa-question fa-10x"></i>`)
 
 //Alternatives
+const WestCoastSwing = new DANCE("WestCoastSwing","description",["Alternatives"],`<i class="fas fa-question fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 8/10"+" its versatility is: "+"very versatile"+" and its song tempo plus an example is: "+ "4/4 time 28-32 Mpm Nico and Vinz : Intruiged")
 
+const Merengue = new DANCE("Merengue","description",["Alternatives"], `<i class="fas fa-question fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 2/10"+" its versatility is: "+" above average"+" and its song tempo plus an example is: "+ "4/4 time 29-32 Mpm Don Omar : Danza Koduro" )
+
+const Samba = new DANCE("Samba","description",["Alternatives"],`<i class="fas fa-question fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 9/10"+" its versatility is: "+"above average"+" and its song tempo plus an example is: "+ "2/4 time 54-56 Mpm  :  ")
+
+const PasoDoble = new DANCE("PasoDoble","description",["Alternatives"],`<i class="fas fa-question fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 7/10"+" its versatility is: "+"Low"+" and its song tempo plus an example is: "+ "2/4 time 58-60 Mpm Nico and Espana Cani")
 //American
 
 //International
 const International = new Category("International", "International dances are dances competed in by the ballroom community around the world", ["Standard","Latin","Home"],"International Style are mostly danced competitively rather than socially",`<i class="fas fa-globe-americas fa-10x"></>`)
-
+//Standard
 const Standard = new Category("Standard", "Standard Dance", ["SlowWaltz","StandardTango", "SlowFoxtrot","Viennese", "Quickstep","International" ],"standard Dance", `<img src="https://img.icons8.com/ios-filled/100/000000/ballroom-dance.png"/>`)
 
+const SlowWaltz = new DANCE("SlowWaltz","description",["Standard"],`<img src="https://img.icons8.com/ios-filled/100/000000/ballroom-dance.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 7/10"+" its versatility is: "+"Low"+" and its song tempo plus an example is: "+ "3/4 time 28-31 Mpm Chris Spheeris : Enchantment")
+
+const StandardTango = new DANCE("StandardTango","description",["Standard"],`<img src="https://img.icons8.com/ios-filled/100/000000/ballroom-dance.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 7/10"+" its versatility is: "+" above average"+" and its song tempo plus an example is: "+ "4/4 time 32-34 Mpm Gotan Project: Santa Maria" )
+
+const SlowFoxtrot = new DANCE("SlowFoxtrot","description",["Standard"],`<img src="https://img.icons8.com/ios-filled/100/000000/ballroom-dance.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 7.5/10"+" its versatility is: "+"Low"+" and its song tempo plus an example is: "+ "4/4 time 28-30 Mpm Big Voodo Daddy : It Only Took a Kiss ")
+
+const Viennese = new DANCE("Viennese","description",["Standard"],`<img src="https://img.icons8.com/ios-filled/100/000000/ballroom-dance.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 8/10"+" its versatility is: "+"average"+" and its song tempo plus an example is: "+ "3/4 time 56-60 Mpm Max : Where Am I At")
+
+const Quickstep = new DANCE("Quickstep","description",["Standard"],`<img src="https://img.icons8.com/ios-filled/100/000000/ballroom-dance.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 9/10"+" its versatility is: "+"Low"+" and its song tempo plus an example is: "+ "4/4 time 50-52 Mpm Marianas Trench : Stutter")
+//Standard
+//Latin
 const Latin = new Category("Latin", "Latin Dance", ["ChaChaCha","LatinRumba","InternationalSamba","Paso","Jive","International"],"Latin Dance", `<img src="https://img.icons8.com/emoji/100/000000/dancing-girl.png"/>`)
+
+const ChaChaCha = new DANCE("ChaChaCha","description",["Latin"],``,"Pauls Biased belief of this dance is that its difficulty is: "+" 7.5/10"+" its versatility is: "+"average"+" and its song tempo plus an example is: "+ "4/4 time 32-34 Mpm Major : Love Me Ole")
+
+const LatinRumba = new DANCE("LatinRumba","description",["Latin"],``,"Pauls Biased belief of this dance is that its difficulty is: "+" 8/10"+" its versatility is: "+"average"+" and its song tempo plus an example is: "+ "3/4 time 56-60 Mpm Max : Where Am I At")
+
+const InternationalSamba = new DANCE("InternationalSamba","description",["Latin"],``,"Pauls Biased belief of this dance is that its difficulty is: "+" 8/10"+" its versatility is: "+"average"+" and its song tempo plus an example is: "+ "3/4 time 56-60 Mpm Max : Where Am I At")
+
+const Paso = new DANCE("Paso","description",["Latin"],``,"Pauls Biased belief of this dance is that its difficulty is: "+" 8/10"+" its versatility is: "+"Low"+" and its song tempo plus an example is: "+ "2/4 time 60-62 Mpm Billie Eilish : Bury a Friend")
+
+const Jive = new DANCE("Jive","description",["Latin"],``,"Pauls Biased belief of this dance is that its difficulty is: "+" 7/10"+" its versatility is: "+"average"+" and its song tempo plus an example is: "+ "4/4 time 44-52 Mpm The Weekend : Blinding Lights")
+//Latin
 //International
 
 
@@ -105,7 +133,7 @@ function clearContent(){
 }
 
 $(document).on("click", ".button", function(){
-    const objectArray = [Home,American,International,Other,Rhythm,ChaCha,Rumba,EastCoastSwing,Bolero,Mambo,Smooth,Waltz,Tango,Foxtrot,VienneseWaltz,Alternatives,Standard,Latin]
+    const objectArray = [Home,American,International,Other,Rhythm,ChaCha,Rumba,EastCoastSwing,Bolero,Mambo,Smooth,Waltz,Tango,Foxtrot,VienneseWaltz,Alternatives,WestCoastSwing,Samba,Merengue,PasoDoble,Standard,SlowWaltz,StandardTango,SlowFoxtrot,Viennese,Quickstep,Latin,LatinRumba,Paso,Jive,ChaChaCha,InternationalSamba]
     const target = $(this).attr("data-name");
     console.log(target);
     objectArray.forEach(function(item){
