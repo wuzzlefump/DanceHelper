@@ -9,6 +9,7 @@ body{
 .card{
     background-color: cornsilk;
     margin-top: 2%;
+    border-radius: 10px;
 }
 
 .menu{

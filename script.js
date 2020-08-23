@@ -43,7 +43,7 @@ const Mambo = new DANCE("Mambo","description",["Rhythm"],`<img src="https://img.
 // other
 const Other = new Category("Other", "other",["StreetLatin","Club","Country","Misc", "Home"], "other", `<i class="fas fa-road fa-10x"></i>`)
 
-
+//StreetLatin
 const StreetLatin = new Category("StreetLatin","description",["Bachata", "Salsa", "Zouk", "Forro", "Kizomba", "Cumbia", "Other"],"",`<i class="fas fa-road fa-10x"></i>`)
 
 const Bachata = new DANCE("Bachata","description",["StreetLatin"],`<img src="https://img.icons8.com/emoji/100/000000/dancing-girl.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+"4/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time varied mpm time Prince Royce: Incondicional")
@@ -57,13 +57,33 @@ const Forro = new DANCE("Forro","description",["StreetLatin"],`<img src="https:/
 const Cumbia = new DANCE("Cumbia","description",["StreetLatin"],`<img src="https://img.icons8.com/emoji/100/000000/dancing-girl.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+"6/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" N/A" )
 
 const Kizomba = new DANCE("Kizomba","description",["StreetLatin"],`<img src="https://img.icons8.com/emoji/100/000000/dancing-girl.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+"8/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time varied tempo Nao me toca")
+//Street Latin
+//Club
+const Club = new Category("Club","description",["Blues","NightClub2Step","Hustle","Other"],"",`<i class="fas fa-road fa-10x"></i>`)
 
-const Club = new Category("Club","description",["Blues","NightClub2Step","Hustle","Balboa","CarolinaShag","Other"],"",`<i class="fas fa-road fa-10x"></i>`)
+const Blues = new DANCE("Blues","description",["Club"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"2/10"+" its versatility is: "+"high" +" and its song tempo plus an example is: "+" varied 3/4 and 4/4 time and varied tempo LP: Muddy Waters") 
 
-const Country = new Category("Country","description",["2Step","3step","CountryWaltz","CountrySwing","Other"],"",`<i class="fas fa-road fa-10x"></i>`)
+const NightClub2Step = new DANCE("NightClub2Step","description",["Club"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"2/10"+" its versatility is: "+"high" +" and its song tempo plus an example is: "+" 4/4 time 16-22Mpm  Eric Benet: Spend My Life With You")
 
-const Misc = new Category("Misc","description",["Polka", "Peabody","Argentine", "CollegiateShag",
+const Hustle = new DANCE("Hustle", "description",["Club"],``,"Pauls Biased belief of this dance is that its difficulty is: "+"2/10"+" its versatility is: "+"high" +" and its song tempo plus an example is: "+" 4/4 time 28-30Mpm ABBA:Gimme Gimme Gimme/SOS")
+
+//Club
+//Country
+const Country = new Category("Country","description",["TwoStep","ThreeStep","CountryWaltz","CountrySwing","Other"],"",`<i class="fas fa-road fa-10x"></i>`)
+
+const TwoStep = new DANCE("TwoStep","description",["Country"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"4/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time and 45 mpm save a horse ride a cowboy. (paul doesnt like country enough to look up the artist) ")
+
+const ThreeStep = new DANCE("Threestep","description",["Country"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"6/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time and 27-30 mpm (paul doesnt like country enough to look up the artist or song)")
+
+const CountrySwing = new DANCE("CountrySwing", "description",["Country"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"3/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time and a varied tempo . (paul doesnt like country enough to look up an artist or song) ")
+//Country
+//misc
+const Misc = new Category("Misc","description",["Polka", "Peabody","Argentine","Balboa","CarolinaShag", "CollegiateShag",
 "Other"],"",`<i class="fas fa-road fa-10x"></i>`)
+//misc
+const Polka = new DANCE("Polka", "description", ["Polka"], `<i class="fas fa-road fa-10x"></i>`, "Pauls Biased belief of this dance is that its difficulty is: "+"3/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" 2/4 time 60-62Mpm. Doghouse Polka: Babe Wagner ")
+
+const Peabody = new DANCE
 //other
 
 //Smooth
@@ -154,7 +174,7 @@ function clearContent(){
 }
 
 $(document).on("click", ".button", function(){
-    const objectArray = [Home,American,International,Other,Rhythm,ChaCha,Rumba,EastCoastSwing,Bolero,Mambo,Smooth,Waltz,Tango,Foxtrot,VienneseWaltz,Alternatives,WestCoastSwing,Samba,Merengue,PasoDoble,Standard,SlowWaltz,StandardTango,SlowFoxtrot,Viennese,Quickstep,Latin,LatinRumba,Paso,Jive,ChaChaCha,InternationalSamba,StreetLatin,Club,Country,Misc, Bachata, Zouk, Kizomba,Forro,Cumbia, Salsa]
+    const objectArray = [Home,American,International,Other,Rhythm,ChaCha,Rumba,EastCoastSwing,Bolero,Mambo,Smooth,Waltz,Tango,Foxtrot,VienneseWaltz,Alternatives,WestCoastSwing,Samba,Merengue,PasoDoble,Standard,SlowWaltz,StandardTango,SlowFoxtrot,Viennese,Quickstep,Latin,LatinRumba,Paso,Jive,ChaChaCha,InternationalSamba,StreetLatin,Club,Country,Misc, Bachata, Zouk, Kizomba,Forro,Cumbia, Salsa, Blues, NightClub2Step, Hustle,TwoStep,ThreeStep,CountrySwing]
     const target = $(this).attr("data-name");
     console.log(target);
     objectArray.forEach(function(item){
