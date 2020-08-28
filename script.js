@@ -41,7 +41,7 @@ const Mambo = new DANCE("Mambo","description",["Rhythm"],`<img src="https://img.
 //Rhythm
 
 // other
-const Other = new Category("Other", "other",["StreetLatin","Club","Country","Misc", "Home"], "other", `<i class="fas fa-road fa-10x"></i>`)
+const Other = new Category("Other", "other",["StreetLatin","Club","Country","SwingOffshoot","Misc", "Home"], "other", `<i class="fas fa-road fa-10x"></i>`)
 
 //StreetLatin
 const StreetLatin = new Category("StreetLatin","description",["Bachata", "Salsa", "Zouk", "Forro", "Kizomba", "Cumbia", "Other"],"",`<i class="fas fa-road fa-10x"></i>`)
@@ -79,13 +79,24 @@ const CountrySwing = new DANCE("CountrySwing", "description",["Country"],`<i cla
 
 const CountryWaltz = new DANCE("CountryWaltz","description",["Country"],``,"Pauls Biased belief of this dance is that its difficulty is: "+"3/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" 3/4 time and a varied tempo . (paul doesnt like country enough to look up an artist or song)" )
 //Country
+const SwingOffshoot = new Category("SwingOffshoot","Swing is an umbrella term. these are offshoots of eastcoast swing",["Balboa","CollegiateShag","Lindyhop","Other"])
 //misc
-const Misc = new Category("Misc","description",["Polka", "Peabody","Argentine","Balboa","CarolinaShag", "CollegiateShag",
+const Misc = new Category("Misc","description",["Polka", "Peabody","Argentine","CarolinaShag", 
 "Other"],"",`<i class="fas fa-road fa-10x"></i>`)
 //misc
-const Polka = new DANCE("Polka", "description", ["Polka"], `<i class="fas fa-road fa-10x"></i>`, "Pauls Biased belief of this dance is that its difficulty is: "+"3/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" 2/4 time 60-62Mpm. Doghouse Polka: Babe Wagner ")
+const Polka = new DANCE("Polka", "description", ["Misc"], `<i class="fas fa-road fa-10x"></i>`, "Pauls Biased belief of this dance is that its difficulty is: "+"3/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" 2/4 time 60-62Mpm. Doghouse Polka: Babe Wagner ")
 
-const Peabody = new DANCE
+const Peabody = new DANCE("Peabody","Want to briskly trot with your Partner? Maybe Peabody is for you",["Misc"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"4/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" 2/4 time 60-62Mpm. Pink Martini: The Man With The Big Sombrero " )
+
+const Argentine = new DANCE("Argentine","description",["Misc"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"7.5/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time 22-32Mpm. Querer: Circ Du Soleil ")
+
+const Balboa = new DANCE("Balboa","Like? shuffling around to fast fast big band music? Maybe try Balboa",["SwingOffshoot"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"6.5/10"+" its versatility is: "+"lower" +" and its song tempo plus an example is: "+" 4/4 time 40-65 Mpm. Poppity Pop: Slim Gaillard")
+
+const CollegiateShag = new DANCE("CollegiateShag","Need a workout?Like Constantly Bouncing? Like Shag? Try this dance",["SwingOffshoot"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"7.5/10"+" its versatility is: "+"lower" +" and its song tempo plus an example is: "+" 4/4 time 45-50 Mpm. Fats Waller: Twenty-Four Robbers ")
+
+const CarolinaShag = new DANCE("CarolinaShag","Do you like west coast swing? wanna make it more complicated and increase the speed. There ya go",["Misc"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"9/10"+" its versatility is: "+"lower" +" and its song tempo plus an example is: "+" 4/4 time 27-34 Mpm. Gnarls Barkley: Crazy")
+
+const Lindyhop = new DANCE("Lindyhop","One of the first variations of East Coast. Super fast. Old timey big band. Thats the stuff",["SwingOffshoot"],`<i class="fas fa-road fa-10x"></i>`,"Pauls Biased belief of this dance is that its difficulty is: "+"7.5/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time 30-45 Mpm. Ella Fitzgerald: Smooth Sailing")
 //other
 
 //Smooth
@@ -176,7 +187,7 @@ function clearContent(){
 }
 
 $(document).on("click", ".button", function(){
-    const objectArray = [Home,American,International,Other,Rhythm,ChaCha,Rumba,EastCoastSwing,Bolero,Mambo,Smooth,Waltz,Tango,Foxtrot,VienneseWaltz,Alternatives,WestCoastSwing,Samba,Merengue,PasoDoble,Standard,SlowWaltz,StandardTango,SlowFoxtrot,Viennese,Quickstep,Latin,LatinRumba,Paso,Jive,ChaChaCha,InternationalSamba,StreetLatin,Club,Country,Misc, Bachata, Zouk, Kizomba,Forro,Cumbia, Salsa, Blues, NightClub2Step, Hustle,TwoStep,ThreeStep,CountrySwing,CountryWaltz]
+    const objectArray = [Home,American,International,Other,Rhythm,ChaCha,Rumba,EastCoastSwing,Bolero,Mambo,Smooth,Waltz,Tango,Foxtrot,VienneseWaltz,Alternatives,WestCoastSwing,Samba,Merengue,PasoDoble,Standard,SlowWaltz,StandardTango,SlowFoxtrot,Viennese,Quickstep,Latin,LatinRumba,Paso,Jive,ChaChaCha,InternationalSamba,StreetLatin,Club,Country,Misc, Bachata, Zouk, Kizomba,Forro,Cumbia, Salsa, Blues, NightClub2Step, Hustle,TwoStep,ThreeStep,CountrySwing,CountryWaltz, SwingOffshoot,Balboa,CollegiateShag,Argentine,Peabody, Lindyhop]
     const target = $(this).attr("data-name");
     console.log(target);
     objectArray.forEach(function(item){
