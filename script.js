@@ -41,10 +41,10 @@ const Mambo = new DANCE("Mambo","If all Rhythm Dances are a type of seduction, M
 //Rhythm
 
 // other
-const Other = new Category("Other", "There are many dances other than the ones danced by the ballroom community.",["StreetLatin","Club","Country","SwingOffshoot","Misc", "Home"], "Some of these dances are more fun than the ballroom ones in Paul's opinion", `<i class="fas fa-road fa-10x"></i>`)
+const Other = new Category("Other", "There are many dances other than the ones danced by the ballroom community.",["StreetLatin","Club","Country","SwingOffshoot","Misc", "Home"], "Some of these dances are more fun than the ballroom ones in Paul's opinion", `<img src="https://img.icons8.com/ios/100/000000/swap.png"/>`)
 
 //StreetLatin
-const StreetLatin = new Category("StreetLatin","Latin America is one of the biggest sources of social dances.",["Bachata", "Salsa", "Zouk", "Forro", "Kizomba", "Cumbia", "Other"],"",`<img src="https://img.icons8.com/color/100/000000/road.png"/>`)
+const StreetLatin = new Category("StreetLatin","Latin America is one of the biggest sources of social dances.",["Bachata", "Salsa", "Zouk", "Forro", "Kizomba", "Cumbia", "Other"],"These dances go to latin beats, and make the bodies groove out in the streets. ",`<img src="https://img.icons8.com/color/100/000000/road.png"/>`)
 
 const Bachata = new DANCE("Bachata","Started out as a dominican street dance. now everyones making remixes of it. It ranges from super fun to romantic and sexy. you like latin music and remixes? give it a try ",["StreetLatin"],`<img src="https://img.icons8.com/ios-filled/100/000000/music-record.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"4/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time varied mpm time Prince Royce: Incondicional")
 
@@ -82,7 +82,7 @@ const CountryWaltz = new DANCE("CountryWaltz","Waltz too hard? Wish it were just
 const SwingOffshoot = new Category("SwingOffshoot","Swing is an umbrella term. these are offshoots of eastcoast swing",["Balboa","CollegiateShag","Lindyhop","Other"],"Jitterbug is another one, but thats included in East Coast Swing",`<img src="https://img.icons8.com/ios-filled/100/000000/bow-tie-half.png"/>`)
 //misc
 const Misc = new Category("Misc","Some misc. dances",["Polka", "Peabody","Argentine","CarolinaShag", 
-"Other"],"Some dances dont really fall into  any category paul can think of.",`<i class="fas fa-road fa-10x"></i>`)
+"Other"],"Some dances dont really fall into  any category paul can think of.",`<img src="https://img.icons8.com/pastel-glyph/100/000000/box--v2.png"/>`)
 //misc
 const Polka = new DANCE("Polka", "Is your head spinning? No thats just you. Yay Polka", ["Misc"], `<img src="https://img.icons8.com/ios/100/000000/folk-music.png"/>`, "Paul's Biased belief of this dance is that its difficulty is: "+"3/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" 2/4 time 60-62Mpm. Doghouse Polka: Babe Wagner ")
 
