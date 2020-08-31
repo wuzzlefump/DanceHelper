@@ -113,7 +113,7 @@ const VienneseWaltz = new DANCE("VienneseWaltz","Like waltz? Lets double the spe
 //Smooth
 
 //Alternatives
-const Alternatives = new Category("Alternatives","Alternative Dances",["WestCoastSwing","Merengue","Samba","PasoDoble","American"],"Alternative Dances", `<i class="fas fa-question fa-10x"></i>`)
+const Alternatives = new Category("Alternatives","Alternative Dances are dances that dont really fall into Rhythm or Smooth categories. The American ballroom community still competes in it though. ",["WestCoastSwing","Merengue","Samba","PasoDoble","American"],"Alternative Dances.... nice of them to give you options...", `<i class="fas fa-question fa-10x"></i>`)
 
 //Alternatives
 const WestCoastSwing = new DANCE("WestCoastSwing","While West coast swing was designed not to rock boats. It rocks. it also works on both coasts.It also works for almost everything",["Alternatives"],`<img src="https://img.icons8.com/ios/100/000000/sail-boat.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+" 8/10"+" its versatility is: "+"very versatile"+" and its song tempo plus an example is: "+ "4/4 time 28-32 Mpm Nico and Vinz : Intruiged")
