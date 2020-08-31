@@ -63,7 +63,7 @@ const Club = new Category("Club","These are traditional night club dances",["Blu
 
 const Blues = new DANCE("Blues","Your Soul singing the Blues? Need a slow rhythm to soothe your soul? Dont want to think too hard about what you are doing? Dance the Blues ",["Club"],`<img src="https://img.icons8.com/ios-filled/100/000000/blues.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"2/10"+" its versatility is: "+"high" +" and its song tempo plus an example is: "+" varied 3/4 and 4/4 time and varied tempo LP: Muddy Waters") 
 
-const NightClub2Step = new DANCE("NightClub2Step","In a night Club often? It playing power ballads or other slow songs? THis may be what you need",["Club"],`<img src="https://img.icons8.com/metro/100/000000/partly-cloudy-night.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"2/10"+" its versatility is: "+"high" +" and its song tempo plus an example is: "+" 4/4 time 16-22Mpm  Eric Benet: Spend My Life With You")
+const NightClub2Step = new DANCE("NightClub2Step","In a night Club often? It playing power ballads or other slow songs? This may be what you need",["Club"],`<img src="https://img.icons8.com/metro/100/000000/partly-cloudy-night.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"2/10"+" its versatility is: "+"high" +" and its song tempo plus an example is: "+" 4/4 time 16-22Mpm  Eric Benet: Spend My Life With You")
 
 const Hustle = new DANCE("Hustle", "Wanna disco? Have the need for speed? This was made for you.",["Club"],`<img src="https://img.icons8.com/ios-filled/100/000000/disco-ball.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"2/10"+" its versatility is: "+"high" +" and its song tempo plus an example is: "+" 4/4 time 28-30Mpm ABBA:Gimme Gimme Gimme/SOS")
 
@@ -141,7 +141,7 @@ const Viennese = new DANCE("Viennese","So lets take Viennese but speed it up eve
 const Quickstep = new DANCE("Quickstep","Lets say Swing and Foxtrot had a baby, then filled it with sugar. thats what you are getting in to ",["Standard"],`<img src="https://img.icons8.com/ios-filled/100/000000/hyperactive.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 9/10"+" its versatility is: "+"Low"+" and its song tempo plus an example is: "+ "4/4 time 50-52 Mpm Marianas Trench : Stutter")
 //Standard
 //Latin
-const Latin = new Category("Latin", "Latin Dance", ["ChaChaCha","LatinRumba","InternationalSamba","Paso","Jive","International"],"Latin Dance", `<img src="https://img.icons8.com/emoji/100/000000/dancing-girl.png"/>`)
+const Latin = new Category("Latin", "Latin dances are one of the categorys the international ballroom community competes in. In latin dances people often go out of closed holds for moves and use a latin body motion to highlight the dance.", ["ChaChaCha","LatinRumba","InternationalSamba","Paso","Jive","International"],"Latin dances are like American's Rhythm dances.", `<img src="https://img.icons8.com/emoji/100/000000/dancing-girl.png"/>`)
 
 const ChaChaCha = new DANCE("ChaChaCha","Do you like fast? do you like flirty? Add in some latin movement and voila!",["Latin"],`<img src="https://img.icons8.com/ios-filled/100/000000/wink.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 7.5/10"+" its versatility is: "+"average"+" and its song tempo plus an example is: "+ "4/4 time 32-34 Mpm Major : Love Me Ole")
 
