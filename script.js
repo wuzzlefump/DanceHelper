@@ -128,7 +128,7 @@ const PasoDoble = new DANCE("PasoDoble","Dont get enough adrenaline in your life
 //International
 const International = new Category("International", "International dances are dances competed in by the ballroom community around the world", ["Standard","Latin","Home"],"International Style are mostly danced competitively rather than socially",`<i class="fas fa-globe-americas fa-10x"></>`)
 //Standard
-const Standard = new Category("Standard", "Standard Dance", ["SlowWaltz","StandardTango", "SlowFoxtrot","Viennese", "Quickstep","International" ],"standard Dance", `<img src="https://img.icons8.com/ios-filled/100/000000/ballroom-dance.png"/>`)
+const Standard = new Category("Standard", "Standard Dances are dances danced by the competed in by the international ballroom community. They travel around the room, and do not leave the closed hold", ["SlowWaltz","StandardTango", "SlowFoxtrot","Viennese", "Quickstep","International" ],"Standard dances are very similar to american 'Smooth' dances", `<img src="https://img.icons8.com/ios-filled/100/000000/ballroom-dance.png"/>`)
 
 const SlowWaltz = new DANCE("SlowWaltz","Think waltz isnt slow enough? lets slow it down.",["Standard"],`<img src="https://img.icons8.com/ios/100/000000/ballroom-dance.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 7/10"+" its versatility is: "+"Low"+" and its song tempo plus an example is: "+ "3/4 time 28-31 Mpm Chris Spheeris : Enchantment")
 
