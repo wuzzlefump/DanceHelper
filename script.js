@@ -41,10 +41,10 @@ const Mambo = new DANCE("Mambo","If all Rhythm Dances are a type of seduction, M
 //Rhythm
 
 // other
-const Other = new Category("Other", "other",["StreetLatin","Club","Country","SwingOffshoot","Misc", "Home"], "other", `<i class="fas fa-road fa-10x"></i>`)
+const Other = new Category("Other", "There are many dances other than the ones danced by the ballroom community.",["StreetLatin","Club","Country","SwingOffshoot","Misc", "Home"], "Some of these dances are more fun than the ballroom ones in Paul's opinion", `<i class="fas fa-road fa-10x"></i>`)
 
 //StreetLatin
-const StreetLatin = new Category("StreetLatin","description",["Bachata", "Salsa", "Zouk", "Forro", "Kizomba", "Cumbia", "Other"],"",`<i class="fas fa-road fa-10x"></i>`)
+const StreetLatin = new Category("StreetLatin","Latin America is one of the biggest sources of social dances.",["Bachata", "Salsa", "Zouk", "Forro", "Kizomba", "Cumbia", "Other"],"",`<img src="https://img.icons8.com/color/100/000000/road.png"/>`)
 
 const Bachata = new DANCE("Bachata","Started out as a dominican street dance. now everyones making remixes of it. It ranges from super fun to romantic and sexy. you like latin music and remixes? give it a try ",["StreetLatin"],`<img src="https://img.icons8.com/ios-filled/100/000000/music-record.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"4/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time varied mpm time Prince Royce: Incondicional")
 
@@ -59,7 +59,7 @@ const Cumbia = new DANCE("Cumbia","A Columbian folk dance dance thats spread thr
 const Kizomba = new DANCE("Kizomba","Interested in Angolan dances? Like Being real close? Like isolating your hips with crazy precision? like  having fancy feet? give it a go",["StreetLatin"],`<img src="https://img.icons8.com/color/100/000000/angola-circular.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"8/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time varied tempo usually between 30-34 measures per minute. Nao me toca")
 //Street Latin
 //Club
-const Club = new Category("Club","description",["Blues","NightClub2Step","Hustle","Other"],"",`<i class="fas fa-road fa-10x"></i>`)
+const Club = new Category("Club","These are traditional night club dances",["Blues","NightClub2Step","Hustle","Other"],"Many Latin Street dances are danced in clubs as well",`<img src="https://img.icons8.com/ios-filled/100/000000/dj.png"/>`)
 
 const Blues = new DANCE("Blues","Your Soul singing the Blues? Need a slow rhythm to soothe your soul? Dont want to think too hard about what you are doing? Dance the Blues ",["Club"],`<img src="https://img.icons8.com/ios-filled/100/000000/blues.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"2/10"+" its versatility is: "+"high" +" and its song tempo plus an example is: "+" varied 3/4 and 4/4 time and varied tempo LP: Muddy Waters") 
 
@@ -69,7 +69,7 @@ const Hustle = new DANCE("Hustle", "Wanna disco? Have the need for speed? This w
 
 //Club
 //Country
-const Country = new Category("Country","description",["TwoStep","ThreeStep","CountryWaltz","CountrySwing","Other"],"While Paul isn't not a fan of country it has spawned quite a few dances",`<img src="https://img.icons8.com/windows/100/000000/cowboy-hat.png"/>`)
+const Country = new Category("Country","Country, as a genre, has quite a few dances you can do to it.",["TwoStep","ThreeStep","CountryWaltz","CountrySwing","Other"],"While Paul isn't not a fan of country music, he is happy you can at least dance to it",`<img src="https://img.icons8.com/windows/100/000000/cowboy-hat.png"/>`)
 
 const TwoStep = new DANCE("TwoStep","Wanna travel round the floor to your favorite country song? this could be the one for you",["Country"],`<img src="https://img.icons8.com/ios-glyphs/100/000000/country-music.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"4/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time and 45 mpm save a horse ride a cowboy. (paul doesnt like country enough to look up the artist) ")
 
@@ -79,24 +79,24 @@ const CountrySwing = new DANCE("CountrySwing", "Wanna spin a girl randomly and d
 
 const CountryWaltz = new DANCE("CountryWaltz","Waltz too hard? Wish it were just 3 steps forward? Want it so you can dance with a beer in your hand? countrify it",["Country"],`<img src="https://img.icons8.com/material-sharp/100/000000/western.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"3/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" 3/4 time and a varied tempo . (paul doesnt like country enough to look up an artist or song)" )
 //Country
-const SwingOffshoot = new Category("SwingOffshoot","Swing is an umbrella term. these are offshoots of eastcoast swing",["Balboa","CollegiateShag","Lindyhop","Other"])
+const SwingOffshoot = new Category("SwingOffshoot","Swing is an umbrella term. these are offshoots of eastcoast swing",["Balboa","CollegiateShag","Lindyhop","Other"],"Jitterbug is another one, but thats included in East Coast Swing",`<img src="https://img.icons8.com/ios-filled/100/000000/bow-tie-half.png"/>`)
 //misc
-const Misc = new Category("Misc","description",["Polka", "Peabody","Argentine","CarolinaShag", 
-"Other"],"",`<i class="fas fa-road fa-10x"></i>`)
+const Misc = new Category("Misc","Some misc. dances",["Polka", "Peabody","Argentine","CarolinaShag", 
+"Other"],"Some dances dont really fall into  any category paul can think of.",`<i class="fas fa-road fa-10x"></i>`)
 //misc
-const Polka = new DANCE("Polka", "description", ["Misc"], `<i class="fas fa-road fa-10x"></i>`, "Paul's Biased belief of this dance is that its difficulty is: "+"3/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" 2/4 time 60-62Mpm. Doghouse Polka: Babe Wagner ")
+const Polka = new DANCE("Polka", "Is your head spinning? No thats just you. Yay Polka", ["Misc"], `<img src="https://img.icons8.com/ios/100/000000/folk-music.png"/>`, "Paul's Biased belief of this dance is that its difficulty is: "+"3/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" 2/4 time 60-62Mpm. Doghouse Polka: Babe Wagner ")
 
-const Peabody = new DANCE("Peabody","Want to briskly trot with your Partner? Maybe Peabody is for you",["Misc"],`<i class="fas fa-road fa-10x"></i>`,"Paul's Biased belief of this dance is that its difficulty is: "+"4/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" 2/4 time 60-62Mpm. Pink Martini: The Man With The Big Sombrero " )
+const Peabody = new DANCE("Peabody","Want to briskly trot with your Partner? Maybe Peabody is for you",["Misc"],`<img src="https://img.icons8.com/material-rounded/100/000000/running.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"4/10"+" its versatility is: "+"low" +" and its song tempo plus an example is: "+" 2/4 time 60-62Mpm. Pink Martini: The Man With The Big Sombrero " )
 
-const Argentine = new DANCE("Argentine","description",["Misc"],`<i class="fas fa-road fa-10x"></i>`,"Paul's Biased belief of this dance is that its difficulty is: "+"7.5/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time 22-32Mpm. Querer: Circ Du Soleil ")
+const Argentine = new DANCE("Argentine","You like leg flicks, You like Ochos? welcome to Argentine",["Misc"],`<img src="https://img.icons8.com/emoji/100/000000/rose-emoji.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"7.5/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time 22-32Mpm. Querer: Circ Du Soleil ")
 
-const Balboa = new DANCE("Balboa","Like? shuffling around to fast fast big band music? Maybe try Balboa",["SwingOffshoot"],`<i class="fas fa-road fa-10x"></i>`,"Paul's Biased belief of this dance is that its difficulty is: "+"6.5/10"+" its versatility is: "+"lower" +" and its song tempo plus an example is: "+" 4/4 time 40-65 Mpm. Poppity Pop: Slim Gaillard")
+const Balboa = new DANCE("Balboa","Like shuffling around to fast fast big band music? Maybe try Balboa",["SwingOffshoot"],`<img src="https://img.icons8.com/metro/100/000000/dancing.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"6.5/10"+" its versatility is: "+"lower" +" and its song tempo plus an example is: "+" 4/4 time 40-65 Mpm. Poppity Pop: Slim Gaillard")
 
-const CollegiateShag = new DANCE("CollegiateShag","Need a workout?Like Constantly Bouncing? Like Shag? Try this dance",["SwingOffshoot"],`<i class="fas fa-road fa-10x"></i>`,"Paul's Biased belief of this dance is that its difficulty is: "+"7.5/10"+" its versatility is: "+"lower" +" and its song tempo plus an example is: "+" 4/4 time 45-50 Mpm. Fats Waller: Twenty-Four Robbers ")
+const CollegiateShag = new DANCE("CollegiateShag","Need a workout?Like Constantly Bouncing? Like Shag? Try this dance",["SwingOffshoot"],`<img src="https://img.icons8.com/ios/100/000000/motarboard.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"7.5/10"+" its versatility is: "+"lower" +" and its song tempo plus an example is: "+" 4/4 time 45-50 Mpm. Fats Waller: Twenty-Four Robbers ")
 
-const CarolinaShag = new DANCE("CarolinaShag","Do you like west coast swing? wanna make it more complicated and increase the speed. There ya go",["Misc"],`<i class="fas fa-road fa-10x"></i>`,"Paul's Biased belief of this dance is that its difficulty is: "+"9/10"+" its versatility is: "+"lower" +" and its song tempo plus an example is: "+" 4/4 time 27-34 Mpm. Gnarls Barkley: Crazy")
+const CarolinaShag = new DANCE("CarolinaShag","Do you like west coast swing? wanna make it more complicated and increase the speed. There ya go",["Misc"],`<img src="https://img.icons8.com/ios/100/000000/sailing-ship-medium.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"9/10"+" its versatility is: "+"lower" +" and its song tempo plus an example is: "+" 4/4 time 27-34 Mpm. Gnarls Barkley: Crazy")
 
-const Lindyhop = new DANCE("Lindyhop","One of the first variations of East Coast. Super fast. Old timey big band. Thats the stuff",["SwingOffshoot"],`<i class="fas fa-road fa-10x"></i>`,"Paul's Biased belief of this dance is that its difficulty is: "+"7.5/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time 30-45 Mpm. Ella Fitzgerald: Smooth Sailing")
+const Lindyhop = new DANCE("Lindyhop","One of the first variations of East Coast. Super fast. Old timey big band. Thats the stuff",["SwingOffshoot"],`<img src="https://img.icons8.com/ios-filled/100/000000/tie.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"7.5/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time 30-45 Mpm. Ella Fitzgerald: Smooth Sailing")
 //other
 
 //Smooth
@@ -187,7 +187,7 @@ function clearContent(){
 }
 
 $(document).on("click", ".button", function(){
-    const objectArray = [Home,American,International,Other,Rhythm,ChaCha,Rumba,EastCoastSwing,Bolero,Mambo,Smooth,Waltz,Tango,Foxtrot,VienneseWaltz,Alternatives,WestCoastSwing,Samba,Merengue,PasoDoble,Standard,SlowWaltz,StandardTango,SlowFoxtrot,Viennese,Quickstep,Latin,LatinRumba,Paso,Jive,ChaChaCha,InternationalSamba,StreetLatin,Club,Country,Misc, Bachata, Zouk, Kizomba,Forro,Cumbia, Salsa, Blues, NightClub2Step, Hustle,TwoStep,ThreeStep,CountrySwing,CountryWaltz, SwingOffshoot,Balboa,CollegiateShag,Argentine,Peabody, Lindyhop]
+    const objectArray = [Home,American,International,Other,Rhythm,ChaCha,Rumba,EastCoastSwing,Bolero,Mambo,Smooth,Waltz,Tango,Foxtrot,VienneseWaltz,Alternatives,WestCoastSwing,Samba,Merengue,PasoDoble,Standard,SlowWaltz,StandardTango,SlowFoxtrot,Viennese,Quickstep,Latin,LatinRumba,Paso,Jive,ChaChaCha,InternationalSamba,StreetLatin,Club,Country,Misc, Bachata, Zouk, Kizomba,Forro,Cumbia, Salsa, Blues, NightClub2Step, Hustle,TwoStep,ThreeStep,CountrySwing,CountryWaltz, SwingOffshoot,Balboa,CollegiateShag,Argentine,Peabody, Lindyhop,Polka,CarolinaShag]
     const target = $(this).attr("data-name");
     console.log(target);
     objectArray.forEach(function(item){
