@@ -147,7 +147,7 @@ const ChaChaCha = new DANCE("ChaChaCha","Do you like fast? do you like flirty? A
 
 const LatinRumba = new DANCE("LatinRumba","If Slow, Romantic, and latin flair are things that speak to you...",["Latin"],`<img src="https://img.icons8.com/ios-glyphs/100/000000/rose.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 8/10"+" its versatility is: "+"average"+" and its song tempo plus an example is: "+ "3/4 time 56-60 Mpm Max : Where Am I At")
 
-const InternationalSamba = new DANCE("InternationalSamba","Also Known as the Brazilian Waltz.Theres a reason this dance is notorious for being a blast... ",["Latin"],`<img src="https://img.icons8.com/ios-filled/100/000000/brazil.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 9/10"+" its versatility is: "+"average"+" and its song tempo plus an example is: "+ "3/4 time 56-60 Mpm Max : Where Am I At")
+const InternationalSamba = new DANCE("InternationalSamba","Also Known as the Brazilian Waltz...its nothing like waltz.Theres a reason this dance is notorious for being a blast... ",["Latin"],`<img src="https://img.icons8.com/ios-filled/100/000000/brazil.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 9/10"+" its versatility is: "+"average"+" and its song tempo plus an example is: "+ "3/4 time 56-60 Mpm Max : Where Am I At")
 
 const Paso = new DANCE("Paso","Do you need more adrenaline in your life? Do you need more stamping? Go fight some bulls.",["Latin"],`<img src="https://img.icons8.com/ios-glyphs/100/000000/bull.png"/>`,"Pauls Biased belief of this dance is that its difficulty is: "+" 8/10"+" its versatility is: "+"Low"+" and its song tempo plus an example is: "+ "2/4 time 60-62 Mpm Billie Eilish : Bury a Friend")
 
