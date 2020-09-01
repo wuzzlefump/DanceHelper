@@ -96,7 +96,7 @@ const CollegiateShag = new DANCE("CollegiateShag","Need a workout?Like Constantl
 
 const CarolinaShag = new DANCE("CarolinaShag","Do you like west coast swing? wanna make it more complicated and increase the speed. There ya go",["Misc"],`<img src="https://img.icons8.com/ios/100/000000/sailing-ship-medium.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"9/10"+" its versatility is: "+"lower" +" and its song tempo plus an example is: "+" 4/4 time 27-34 Mpm. Gnarls Barkley: Crazy")
 
-const Lindyhop = new DANCE("Lindyhop","One of the first variations of East Coast. Super fast. Old timey big band. Thats the stuff",["SwingOffshoot"],`<img src="https://img.icons8.com/ios-filled/100/000000/tie.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"7.5/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time 30-45 Mpm. Ella Fitzgerald: Smooth Sailing")
+const Lindyhop = new DANCE("Lindyhop"," The first variation of swing. Super fast. Old timey big band. Thats the stuff",["SwingOffshoot"],`<img src="https://img.icons8.com/ios-filled/100/000000/tie.png"/>`,"Paul's Biased belief of this dance is that its difficulty is: "+"7.5/10"+" its versatility is: "+"average" +" and its song tempo plus an example is: "+" 4/4 time 30-45 Mpm. Ella Fitzgerald: Smooth Sailing")
 //other
 
 //Smooth
