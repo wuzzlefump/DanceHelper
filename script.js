@@ -203,8 +203,14 @@ createContent(Home);
 function createContent(object){
 
     object.array.forEach(item => {
-    const newBTN = `<li> <button data-name ="${item}" class="button">${item}</button> </li>`
-    $("#button-container").append(newBTN)
+        if(object.array.length - 1 !== object.array.indexOf(item) || object.name === "Home"){
+                const newBTN = `<li> <button data-name ="${item}" class="button">${item}</button> </li>`
+        $("#button-container").append(newBTN)
+        }else{
+            const newBTN = `<li> <button data-name ="${item}" class="button last">${item}</button> </li>`
+        $("#button-container").append(newBTN)
+        }
+
 });
 const newContent = `<p class = "content">${object.description}</p>`
 const newExtra = `<p class = "extra">${object.extra}</p>`
